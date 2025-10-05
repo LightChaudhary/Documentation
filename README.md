@@ -16,3 +16,12 @@ Classifies Iris flowers (setosa, versicolor, virginica) using a Random Forest mo
 - `Iris-Train.csv` – Training data (included)  
 - `Iris-Test.csv` – Test data (included)  
 - `irisdatasets_train_test.py` – Python script  
+
+# Task 3: California Housing Prices
+
+**Goal:**
+To find out which model perform best to find out housing prices
+
+**Files:**
+- `california_house_prices.ipynb` - Jupyter script
+- `housing.csv` - data(included)
