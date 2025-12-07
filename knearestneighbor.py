@@ -19,6 +19,6 @@ knn = KNeighborsClassifier(n_neighbors=11)
 knn.fit(X_train, y_train)
 
 y_pred = knn.predict(X_test)
-print("Accuracy score: ", accuracy_score(y_pred, y_test))
-print("Classification report: ", classification_report(y_pred, y_test))
+print("Accuracy score: ", accuracy_score(y_test, y_pred))
+print("Classification report: ", classification_report(y_test, y_pred))
 
