@@ -89,3 +89,43 @@ To model and visualize a non-linear relationship between input and output using 
 5. Predict new values (e.g., 6.5 hours) and check feature importance  
 
 **Outcome:** Model predicts pass/fail using an ensemble of decision trees and shows feature importance.
+
+# Task 11: Support Vector Machine (SVM) Classification
+
+**Goal:** Predict student results using Linear and RBF SVM models.
+
+**Dataset:** Student performance
+**Features:** Study_Hours, Attendance, Previous_Score
+**Target:** Result (Pass/Fail)
+
+**Libraries:** Pandas, Scikit-learn
+
+**Steps:**
+1. Load dataset and select features
+2. Split data into train and test sets
+3. Apply StandardScaler
+4. Train Linear SVM and RBF SVM
+5. Evaluate accuracy
+6. Tune C and gamma values
+
+**Outcome:** Compared Linear vs RBF SVM and found optimal hyperparameters for best accuracy.
+
+# Task 12: K-Nearest Neighbors (KNN) Classification
+
+**Goal:** Predict student results using the KNN algorithm.
+
+**Dataset:** Student performance  
+**Features:** Study_Hours, Attendance, Previous_Score  
+**Target:** Result (Pass/Fail)
+
+**Libraries:** Pandas, Scikit-learn
+
+**Steps:**  
+1. Load dataset and select features  
+2. Perform stratified train–test split  
+3. Apply StandardScaler  
+4. Train KNN with k = 11  
+5. Evaluate using accuracy and classification report
+
+**Outcome:** KNN model successfully classifies student results using nearest neighbors.
+
