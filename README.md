@@ -129,3 +129,22 @@ To model and visualize a non-linear relationship between input and output using 
 
 **Outcome:** KNN model successfully classifies student results using nearest neighbors.
 
+# Task 13: Multiclass Logistic Regression Classification
+
+**Goal:** Perform multiclass classification using Logistic Regression and predict new student data.
+
+**Dataset:** Synthetic dataset (make_classification)  
+**Features:** 4 numerical features  
+**Target:** 3 Classes (Multiclass)
+
+**Libraries:** NumPy, Scikit-learn
+
+**Steps:**  
+1. Generate synthetic multiclass dataset  
+2. Perform stratified train–test split  
+3. Apply StandardScaler  
+4. Train Logistic Regression (multinomial)  
+5. Evaluate using accuracy and classification report  
+6. Predict class and probability for a new sample
+
+**Outcome:** Logistic Regression successfully classifies multiple classes and predicts probabilities for new inputs.
