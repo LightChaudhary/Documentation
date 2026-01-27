@@ -148,3 +148,116 @@ To model and visualize a non-linear relationship between input and output using 
 6. Predict class and probability for a new sample
 
 **Outcome:** Logistic Regression successfully classifies multiple classes and predicts probabilities for new inputs.
+
+### Projects
+# Spam Email Classifier (Machine Learning - NLP)
+
+A real-world Spam vs Ham (Not Spam) email classification system built using Python, Natural Language Processing (NLP), and Machine Learning.
+
+This project uses the Enron Email Dataset and applies text cleaning, TF-IDF vectorization, and supervised learning to automatically detect spam emails.
+
+## What This Project Does
+Given an email, the system predicts whether it is: 
+* SPAM
+* HAM (Not Spam)
+It learns patterns from thousands of real emails and builds a statistical model that understands which words and phrases indicate spam.
+
+## Machine Learning Pipeline
+The project follows workflow: 
+Raw Emails
+     ↓
+Text Cleaning
+     ↓
+TF-IDF Vectorization
+     ↓
+Train/Test Split
+     ↓
+Machine Learning Model
+     ↓
+Evaluation
+     ↓
+Live Email Prediction
+
+## Dataset
+We use the Enron Spam Dataset, which contains real corporate emails.
+Dataser structure: 
+| Column   | Description         |
+| -------- | ------------------- |
+| Subject  | Email subject       |
+| Message  | Email body          |
+| Spam/Ham | Label (spam or ham) |
+| Date     | Email date          |
+
+Total emails : 33,716
+Balanced classes:
+* Spam ≈ 17,171
+* Ham ≈ 16,545
+
+### Step 1- Data Preparation
+
+We combine the subject and message into one text field.
+We also convert labels into numbers.
+
+### Step 2- Text 
+Each email is cleaned using:
+* Lowercasing
+* Removing numbers
+* Removing punctuation
+* Removing stopwords (like the, is, and, to)
+* Tokenization
+This makes the model focus only on meaningful words.
+
+### Step 3- Feature Engineering(TF-TDF)
+We convert text into numbers using TF-IDF (Term Frequency – Inverse Document Frequency).
+This means:
+* Words that appear often in a single email get more weight
+* Words that appear in almost every email (like “the”) get less weight
+This creates a numeric vector representation of each email.
+
+### Step 4- Model Training & Evaluation
+The model is trained on labeled email data and evaluated on unseen emails.
+**Results**
+Accuracy: 98.23%
+
+Precision, Recall, F1-Score:
+Spam and Ham are both predicted with extremely high reliability.
+
+### Step 5- Live Email Prediction
+You can type any email, and the model will classify it:
+
+Example: 
+Enter an email:
+Congratulations! You have won $10,000. Click here to claim.
+
+Output:
+SPAM
+
+Enter an email:
+Hey, there is a meeting tomorrow at 2pm.
+
+Output:
+HAM (Not Spam)
+
+## Technologies Used 
+* Python
+* Pandas
+* Scikit-learn
+* Regular Expressions
+* NLP (TF-IDF)
+* Jupyter Notebook / VS Code
+
+## Current Status
+* Data loaded
+* Text cleaned
+* Features extracted
+* Model trained
+* Model evaluated
+* Real email predictions working
+
+## Next Improvements (Future Work)
+* Add multiple models
+* Compare model performance
+* Tune hyperparameters
+* Save & load trained models
+* Build a web or API interface
+* Use deep learning (BERT)
